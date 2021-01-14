@@ -8,8 +8,8 @@ namespace Gra
     {
         public static void glowny()
         {
-            ConsoleKeyInfo cki;
             Console.Clear();
+            ConsoleKeyInfo cki;
             Console.WriteLine("######################################");
             Console.WriteLine("#              KUCHNIA               #");
             Console.WriteLine("######################################");
@@ -25,16 +25,18 @@ namespace Gra
             Console.WriteLine("#   [Esc] WYJŚCIE                    #");
             Console.WriteLine("#                                    #");
             Console.WriteLine("######################################");
+
             cki = Console.ReadKey();
             if (cki.Key == ConsoleKey.Escape) Program.wyjscie();
             if (cki.Key == ConsoleKey.D1) zmywarka();
             if (cki.Key == ConsoleKey.D2) lodowka();
             if (cki.Key == ConsoleKey.D2) piec();
-            Console.Clear();
         }  
 
         public static void zmywarka()
         {
+            ConsoleKeyInfo cki;
+            Console.Clear();
             Console.WriteLine("######################################");
             Console.WriteLine("#              ZMYWARKA              #");
             Console.WriteLine("######################################");
@@ -47,10 +49,16 @@ namespace Gra
             Console.WriteLine("#   [Esc] WYJŚCIE                    #");
             Console.WriteLine("#                                    #");
             Console.WriteLine("######################################");
+            cki = Console.ReadKey();
+            if (cki.Key == ConsoleKey.Escape) Program.wyjscie();
+            //if (cki.Key == ConsoleKey.D1) Program.powrot();
+            
         }
 
         public static void lodowka()
         {
+            ConsoleKeyInfo cki;
+            Console.Clear();
             Console.WriteLine("######################################");
             Console.WriteLine("#              LODÓWKA               #");
             Console.WriteLine("######################################");
@@ -67,6 +75,8 @@ namespace Gra
 
         public static void piec()
         {
+            ConsoleKeyInfo cki;
+            Console.Clear();
             Console.WriteLine("######################################");
             Console.WriteLine("#                PIEC                #");
             Console.WriteLine("######################################");
