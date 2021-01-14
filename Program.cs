@@ -4,6 +4,16 @@ namespace Gra
 {
     class Program
     {
+        public static int skrytka, klucz;
+        public static int[] lokal = new int[2];
+
+        public static void nowagra()
+        {
+            Random rnd = new Random();
+            skrytka = rnd.Next(1, 10);
+            klucz = rnd.Next(1, 10);
+            //test
+        }
         public static void zasady()
         {
             ConsoleKeyInfo cki;
@@ -63,7 +73,8 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D2) zasady();
             } while (cki.Key != ConsoleKey.D1);
             Console.Clear();
-            
+
+            Salon.glowny();
         }
     }
 }
