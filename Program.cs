@@ -1,17 +1,18 @@
 ﻿using System;
+using System.Threading;
 
 namespace Gra
 {
     class Program
     {
-        public static int skrytka, klucz;
-        public static int[] lokal = new int[2];
+        public static int skrytka;
+        public static int[] klucz = new int[3];
 
         public static void nowagra()
         {
             Random rnd = new Random();
-            skrytka = rnd.Next(1, 10);
-            klucz = rnd.Next(1, 10);
+            skrytka = rnd.Next(1, 4);
+            for (int i = 0; i <= 2; i++) klucz[i] = rnd.Next(1, 10);
             //test
         }
         public static void zasady()
@@ -39,6 +40,7 @@ namespace Gra
             do
             {
                 Console.Clear();
+                Thread.Sleep(200);
                 Console.WriteLine("######################################");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#     CZY NA PEWNO CHCESZ WYJŚĆ?     #");
@@ -50,6 +52,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D1) System.Environment.Exit(0);
             } while (cki.Key != ConsoleKey.D2);
         }
+        
         public static void Main(string[] args)
         {
             ConsoleKeyInfo cki;
@@ -72,7 +75,6 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D2) zasady();
             } while (cki.Key != ConsoleKey.D1);
             Console.Clear();
-
             Salon.glowny();
         }
     }
