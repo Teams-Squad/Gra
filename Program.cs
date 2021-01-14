@@ -73,7 +73,6 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D2) zasady();
             } while (cki.Key != ConsoleKey.D1);
             Console.Clear();
-
             Salon.glowny();
         }
     }
