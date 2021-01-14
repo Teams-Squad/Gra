@@ -1,9 +1,11 @@
 # GRA
 made by Team Squad:
 # FUHRMANN PAULINA 
-- Kuchnia [?]
+- Kuchnia
+- Lazienka
 # MAZURKIEWICZ ADAM 
 - Menu [Program]
-- Salon
+- Sypialnia
 # WIERZBICKI KAMIL
+- Salon
 - Korytarz

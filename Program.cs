@@ -52,6 +52,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D1) System.Environment.Exit(0);
             } while (cki.Key != ConsoleKey.D2);
         }
+        
         public static void Main(string[] args)
         {
             ConsoleKeyInfo cki;
