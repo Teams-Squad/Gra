@@ -5,7 +5,7 @@ namespace Gra
 	public class Salon
 	{
 		private static void barek()
-		      {
+		{
 			ConsoleKeyInfo cki;
 			do
 			{
@@ -27,54 +27,66 @@ namespace Gra
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [2] POWRÓT                       #");
 				Console.WriteLine("#                                    #");
-				Console.WriteLine("#   [Esc] WYJŚCIE                    #");
+				Console.WriteLine("#   [Q] WYJŚCIE                      #");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("######################################");
 
 				cki = Console.ReadKey();
-				
-				 if (cki.Key == ConsoleKey.D2) barek () ;
-				  if (cki.Key == ConsoleKey.D5) Program.wyjscie(); 
-			} while (cki.Key != ConsoleKey.D1) ;
-			
-			       
-				
-					do
-					{
-						Console.Clear();
-						Console.WriteLine("######################################");
-						Console.WriteLine("#               BAREK                #");
-						Console.WriteLine("######################################");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("#     CO CHCESZ PRZESZUKAĆ ?         #");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("#   [1] PÓŁKI                        #");
-						Console.WriteLine("#   [2] SZAFKA                       #");
-						Console.WriteLine("#   [3] PUDEŁKO                      #");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("#   [4] POWRÓT                       #");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("######################################");
 
-				         cki = Console.ReadKey();
-				        //  if (cki.Key == ConsoleKey.D1) półki();
-			            //	if (cki.Key == ConsoleKey.D2) szafka();
-				            //  if (cki.Key == ConsoleKey.D3) pudełko();
-				
-				                 if (cki.Key == ConsoleKey.D4) glowny();
+				if (cki.Key == ConsoleKey.D2) glowny();
+				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
+			} while (cki.Key != ConsoleKey.D1); przeszukaj() ;
+		}
+
+
+
+
+		private static void przeszukaj()
+		{
+			ConsoleKeyInfo cki;
+			do
+			{
+				Console.Clear();
+				Console.WriteLine("######################################");
+				Console.WriteLine("#               BAREK                #");
+				Console.WriteLine("######################################");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("#     CO CHCESZ PRZESZUKAĆ ?         #");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("#   [1] PÓŁKI                        #");
+				Console.WriteLine("#   [2] SZAFKA                       #");
+				Console.WriteLine("#   [3] PUDEŁKO                      #");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("#   [4] POWRÓT                       #");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("######################################");
+
+				cki = Console.ReadKey();
+				  if (cki.Key == ConsoleKey.D1) półki();
+				//	if (cki.Key == ConsoleKey.D2) szafka();
+				//  if (cki.Key == ConsoleKey.D3) pudełko();
+
+				if (cki.Key == ConsoleKey.D4) barek();
 
 			} while (cki.Key != ConsoleKey.D4);
-					
-						 
-				}
+		}
+		private static void półki()
+		{
+			Console.Clear();
+			Console.WriteLine("######################################");
+			Console.WriteLine("#               PÓŁKI                #");
+			Console.WriteLine("######################################");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("#          #");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("#   [1] PÓŁKI                        #");
+			Console.WriteLine("#   [2] SZAFKA                       #");
+			Console.WriteLine("#   [3] PUDEŁKO                      #");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("#   [4] POWRÓT                       #");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("######################################");
 
-		private static void przeszukaj_barek()
-		{ 
-		
-		
-		
-		
-		
 		}
 
 
@@ -82,9 +94,7 @@ namespace Gra
 
 
 
-
-
-					public static void glowny()
+			public static void glowny()
 					{
 			            Console.Clear();
 			            ConsoleKeyInfo cki;
