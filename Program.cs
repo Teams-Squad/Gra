@@ -11,7 +11,7 @@ namespace Gra
         {
             Random rnd = new Random();
             skrytka = rnd.Next(1, 10);
-
+            klucz = rnd.Next(1, 10);
         }
         public static void zasady()
         {
