@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
-        "projectName": "Gra",
-        "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
-        "packagesPath": "C:\\Users\\uzytkownik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\uzytkownik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
     "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj": {}
   },
   "projects": {
@@ -31,7 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ksw09\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> f7bf2a64ed693ff87e3c26549398aed1e9e28dab
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
