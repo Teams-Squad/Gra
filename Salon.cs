@@ -31,7 +31,37 @@ namespace Gra
                 Console.WriteLine("######################################");
                 
                 cki = Console.ReadKey();
-            } while (cki.Key != ConsoleKey.D1);
+            
+            } while (cki.Key != ConsoleKey.D2);
+			if (cki.Key == ConsoleKey.D1) ;
+            {
+                do
+                {
+                    Console.Clear();
+                    Console.WriteLine("######################################");
+                    Console.WriteLine("#               BAREK                #");
+                    Console.WriteLine("######################################");
+                    Console.WriteLine("#                                    #");
+                    Console.WriteLine("#     CO CHCESZ PRZESZUKAĆ ?         #");
+                    Console.WriteLine("#                                    #");
+                    Console.WriteLine("#   [1] PÓŁKI                        #");
+                    Console.WriteLine("#   [2] SZAFKA                       #");
+                    Console.WriteLine("#   [3] PUDEŁKO                      #");
+                    Console.WriteLine("#                                    #");
+                    Console.WriteLine("#   [4] POWRÓT                       #");
+                    Console.WriteLine("#                                    #");
+                    Console.WriteLine("######################################");
+                } while (cki.Key != ConsoleKey.D4);
+	{
+                    cki = Console.ReadKey();
+					if (cki.Key == ConsoleKey.D1) PÓŁKI();
+					if (cki.Key == ConsoleKey.D2) SZAFKA();
+                    if (cki.Key == ConsoleKey.D3) PUDEŁKO();
+
+
+
+                }
+
         }
         public static void glowny()
         {
