@@ -51,7 +51,7 @@ namespace Gra
             Console.WriteLine("######################################");
             cki = Console.ReadKey();
             if (cki.Key == ConsoleKey.Escape) Program.wyjscie();
-            if (cki.Key == ConsoleKey.D1) Program.powrot();
+            //if (cki.Key == ConsoleKey.D1) Program.powrot();
             
         }
 

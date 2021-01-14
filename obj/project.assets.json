@@ -8,35 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\uzytkownik\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\ksw09\\.nuget\\packages\\": {}
->>>>>>> f7bf2a64ed693ff87e3c26549398aed1e9e28dab
+    "C:\\Users\\Adam\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
+      "projectUniqueName": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
       "projectName": "Gra",
-      "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
-      "packagesPath": "C:\\Users\\uzytkownik\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\obj\\",
+      "projectPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
+      "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+      "outputPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\uzytkownik\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj",
-      "projectName": "Gra",
-      "projectPath": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj",
-      "packagesPath": "C:\\Users\\ksw09\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\ksw09\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> f7bf2a64ed693ff87e3c26549398aed1e9e28dab
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -47,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -59,7 +48,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -75,8 +63,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

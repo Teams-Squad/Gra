@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "bVrUwvdgyHULt0l8FbaYq9sLSd7eh440U1/A2if7ourwfvxZCSEt/eDb3CijdJBPeQ/s3+mgYm7CKTMuqzYJuQ==",
+  "dgSpecHash": "sAH6nnEBVkVUgrRsvn579J6Y+QogHQ1XPna35OKdlHGbb7Y2PSCdYn61uKClqW7zjEPBUZzg3hqwa9fsR4v04w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
-=======
-  "dgSpecHash": "0rEdi8WN4ir6a6SX3Odg0ldINAosxLYcOHltyCpU5fft4Kt4pjk/+mLrwF3Y3BQwTJ/IgRGRXajzl5cvwVi2LA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj",
->>>>>>> f7bf2a64ed693ff87e3c26549398aed1e9e28dab
+  "projectFilePath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
