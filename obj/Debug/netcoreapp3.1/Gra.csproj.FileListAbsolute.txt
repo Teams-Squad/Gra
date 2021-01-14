@@ -24,3 +24,16 @@ C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csproj.C
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.dll
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.pdb
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.genruntimeconfig.cache
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.exe
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.deps.json
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.runtimeconfig.json
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.runtimeconfig.dev.json
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.dll
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.pdb
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csprojAssemblyReference.cache
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.AssemblyInfoInputs.cache
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.AssemblyInfo.cs
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csproj.CoreCompileInputs.cache
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.dll
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.pdb
+D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.genruntimeconfig.cache

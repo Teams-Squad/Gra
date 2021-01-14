@@ -3,17 +3,32 @@ using System.Threading;
 
 namespace Gra
 {
-    class Program
+    static class Program
     {
         public static int skrytka;
-        public static int[] klucz = new int[3];
+        public static int[] kod = new int[3];
+        public static int klucz = 0;
 
         public static void nowagra()
         {
             Random rnd = new Random();
             skrytka = rnd.Next(1, 4);
-            for (int i = 0; i <= 2; i++) klucz[i] = rnd.Next(1, 10);
+            for (int i = 0; i <= 2; i++) kod[i] = rnd.Next(1, 10);
             //test
+        }
+        public static void loading()
+        {
+            Console.Clear();
+            Random rnd = new Random();
+            Console.WriteLine("\n   TRWA ŁADOWANIE");
+            Console.Write("   ");
+            for (int i = 1; i <= 14; i++)
+            {
+                int ladowanko = rnd.Next(1, 501);
+                Thread.Sleep(ladowanko);
+                Console.Write("#");
+            }
+            Thread.Sleep(1000);
         }
         public static void zasady()
         {
@@ -28,11 +43,11 @@ namespace Gra
                 Console.WriteLine("#       MUSISZ PRZESZUKAĆ DOM,       #");
                 Console.WriteLine("#    ABY ZNALEŹĆ KLUCZ DO WYJŚCIA    #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#            [1] WYJŚCIE             #");
+                Console.WriteLine("#            [1] POWRÓT              #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
-            } while (cki.Key != ConsoleKey.D1);
+            } while (cki.Key != ConsoleKey.Q);
         }
         public static void wyjscie()
         {
@@ -40,7 +55,6 @@ namespace Gra
             do
             {
                 Console.Clear();
-                Thread.Sleep(200);
                 Console.WriteLine("######################################");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#     CZY NA PEWNO CHCESZ WYJŚĆ?     #");
@@ -67,16 +81,16 @@ namespace Gra
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#           [1] START                #");
                 Console.WriteLine("#           [2] ZASADY               #");
-                Console.WriteLine("#           [3] WYJŚCIE              #");
+                Console.WriteLine("#           [Q] WYJŚCIE              #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.D3) wyjscie();
+                if (cki.Key == ConsoleKey.Q) wyjscie();
                 if (cki.Key == ConsoleKey.D2) zasady();
             } while (cki.Key != ConsoleKey.D1);
             Console.Clear();
-
-            Salon.glowny();
+            loading();
+            //Salon.glowny();
         }
     }
 }
