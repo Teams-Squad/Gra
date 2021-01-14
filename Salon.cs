@@ -72,21 +72,24 @@ namespace Gra
 		}
 		private static void półki()
 		{
-			Console.Clear();
+			ConsoleKeyInfo cki;
+			do
+			{
+				Console.Clear();
 			Console.WriteLine("######################################");
 			Console.WriteLine("#               PÓŁKI                #");
 			Console.WriteLine("######################################");
 			Console.WriteLine("#                                    #");
-			Console.WriteLine("#          #");
+			Console.WriteLine("#                   #");
 			Console.WriteLine("#                                    #");
-			Console.WriteLine("#   [1] PÓŁKI                        #");
-			Console.WriteLine("#   [2] SZAFKA                       #");
-			Console.WriteLine("#   [3] PUDEŁKO                      #");
+			Console.WriteLine("#                      #");
+			Console.WriteLine("#                         #");
 			Console.WriteLine("#                                    #");
-			Console.WriteLine("#   [4] POWRÓT                       #");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("#   [1] POWRÓT                       #");
 			Console.WriteLine("#                                    #");
 			Console.WriteLine("######################################");
-
+			} while (cki.Key != ConsoleKey.D1);przeszukaj();
 		}
 
 
