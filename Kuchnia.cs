@@ -32,8 +32,8 @@ namespace Gra
             if (cki.Key == ConsoleKey.D2) lodowka();
 			if (cki.Key == ConsoleKey.D2) piec();
 			
-            if (cki.Key == ConsoleKey.D5) Korytarz.korytarz(); //dodałem przejścia - kamil
-            if (cki.Key == ConsoleKey.D6) Salon.glowny(); //
+            if (cki.Key == ConsoleKey.D4)  Korytarz.korytarz(); //dodałem przejścia - kamil
+            if (cki.Key == ConsoleKey.D5)  Salon.glowny(); //
         }  
 
         public static void zmywarka()

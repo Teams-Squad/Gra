@@ -17,7 +17,7 @@ namespace Gra
 				Console.WriteLine("######################################");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [1] OBRAZY                       #");
-				Console.WriteLine("#   [2] KOMODA	           	#");
+				Console.WriteLine("#   [2] KOMODA                       #");
 				Console.WriteLine("#   [3] ZWISAJĄCA LAMPA              #");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [4] SALON                        #");
@@ -31,9 +31,11 @@ namespace Gra
 				Console.WriteLine("######################################");
 
 				cki = Console.ReadKey();
-				if (cki.Key == ConsoleKey.D4) Salon.glowny();
-				if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
-				if (cki.Key == ConsoleKey.D6) Lazienka.glowny();
+				if (cki.Key == ConsoleKey.D4)  Salon.glowny();
+				if (cki.Key == ConsoleKey.D5)  Kuchnia.glowny();
+				if (cki.Key == ConsoleKey.D6)  Lazienka.glowny();
+				if (cki.Key == ConsoleKey.D7)  Sypialnia.sypialnia();
+				if (cki.Key == ConsoleKey.D8)  Drzwi.drzwi();
 
 			}
 

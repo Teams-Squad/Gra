@@ -15,12 +15,12 @@ namespace Gra
 			Console.WriteLine("#               ŁAZIENKA             #");
 			Console.WriteLine("######################################");
 			Console.WriteLine("#                                    #");
-			Console.WriteLine("#			                        #");
-			Console.WriteLine("#				                    #");
-			Console.WriteLine("#			                        #");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("#                                    #");
+			Console.WriteLine("#                                    #");
 			Console.WriteLine("#                                    #");
 			Console.WriteLine("#   [4] KORYTARZ                     #");
-			Console.WriteLine("#			                        #");
+			Console.WriteLine("#                                    #");
 			Console.WriteLine("#                                    #");
 			Console.WriteLine("#   [Q] WYJŚCIE                      #");
 			Console.WriteLine("#                                    #");
@@ -30,7 +30,7 @@ namespace Gra
 			
 
 
-			if (cki.Key == ConsoleKey.D4) Korytarz.korytarz();
+			if (cki.Key == ConsoleKey.D4)  Korytarz.korytarz(); 
 			
 
 			if (cki.Key == ConsoleKey.Q) Program.wyjscie();

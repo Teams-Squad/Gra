@@ -65,7 +65,7 @@ namespace Gra
 				cki = Console.ReadKey();
 				  if (cki.Key == ConsoleKey.D1) półki();
 					if (cki.Key == ConsoleKey.D2) szafka();
-				      if (cki.Key == ConsoleKey.D3) pudełko();
+					  if (cki.Key == ConsoleKey.D3) pudełko();
 
 				if (cki.Key == ConsoleKey.D4) barek();
 
@@ -342,8 +342,8 @@ namespace Gra
 		}
 		public static void glowny()
 					{
-			            Console.Clear();
-			            ConsoleKeyInfo cki;
+						Console.Clear();
+						ConsoleKeyInfo cki;
 
 						Console.WriteLine("######################################");
 						Console.WriteLine("#                SALON               #");
@@ -355,21 +355,21 @@ namespace Gra
 						Console.WriteLine("#                                    #");
 						Console.WriteLine("#   [4] KORYTARZ                     #");
 						Console.WriteLine("#   [5] KUCHNIA                      #");
-			            Console.WriteLine("#                                    #");
-			            Console.WriteLine("#   [Q] WYJŚCIE                      #");
+						Console.WriteLine("#                                    #");
+						Console.WriteLine("#   [Q] WYJŚCIE                      #");
 						Console.WriteLine("#                                    #");
 						Console.WriteLine("######################################");
 
 			cki = Console.ReadKey();
 						if (cki.Key == ConsoleKey.D1) barek();
 						  if (cki.Key == ConsoleKey.D2) stojak();
-			               if (cki.Key == ConsoleKey.D3) kanapa();
+						   if (cki.Key == ConsoleKey.D3) kanapa();
 
 
-			 if (cki.Key == ConsoleKey.D4) Korytarz.korytarz();
-			 //if (cki.Key == ConsoleKey.D5) kuchnia.glowny();
+			 if (cki.Key == ConsoleKey.D4)  Korytarz.korytarz();
+			 if (cki.Key == ConsoleKey.D5)  Kuchnia.glowny();
 		   
-			if (cki.Key == ConsoleKey.Q) Program.wyjscie();
+			if (cki.Key == ConsoleKey.Q) Program.loading(); Program.wyjscie();
 
 		}
 

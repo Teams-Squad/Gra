@@ -87,7 +87,7 @@ namespace Gra
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) wyjscie();
                 if (cki.Key == ConsoleKey.D2) zasady();
-            } while (cki.Key != ConsoleKey.D1);
+            } while (cki.Key != ConsoleKey.D1); Program.loading();
             Console.Clear();
            // loading();           //wyłączyłem ładowanie bo mi przeszkadzało - kamil
             Salon.glowny();

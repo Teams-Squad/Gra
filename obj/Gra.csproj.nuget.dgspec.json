@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj": {}
+    "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj": {
+    "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj",
+        "projectUniqueName": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
         "projectName": "Gra",
-        "projectPath": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\Gra.csproj",
+        "projectPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
         "packagesPath": "C:\\Users\\ksw09\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksw09\\Source\\Repos\\Teams-Squad\\Gra\\obj\\",
+        "outputPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ksw09\\AppData\\Roaming\\NuGet\\NuGet.Config",

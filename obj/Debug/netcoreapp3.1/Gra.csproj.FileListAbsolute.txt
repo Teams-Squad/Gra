@@ -36,3 +36,4 @@ D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.cspro
 D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.dll
 D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.pdb
 D:\+++Studia\PROGRAMOWANIE\GRA\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.genruntimeconfig.cache
+C:\Users\ksw09\source\repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csprojAssemblyReference.cache
