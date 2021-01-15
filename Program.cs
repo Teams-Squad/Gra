@@ -43,11 +43,11 @@ namespace Gra
                 Console.WriteLine("#       MUSISZ PRZESZUKAĆ DOM,       #");
                 Console.WriteLine("#    ABY ZNALEŹĆ KLUCZ DO WYJŚCIA    #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#            [1] POWRÓT              #");
+                Console.WriteLine("#            [Q] POWRÓT              #"); // zmniełem 1 na Q - kamil
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
-            } while (cki.Key != ConsoleKey.Q);
+            } while (cki.Key != ConsoleKey.Q); 
         }
         public static void wyjscie()
         {
@@ -89,8 +89,8 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D2) zasady();
             } while (cki.Key != ConsoleKey.D1);
             Console.Clear();
-            loading();
-            //Salon.glowny();
+           // loading();           //wyłączyłem ładowanie bo mi przeszkadzało - kamil
+            Salon.glowny();
         }
     }
 }

@@ -30,7 +30,10 @@ namespace Gra
             if (cki.Key == ConsoleKey.Escape) Program.wyjscie();
             if (cki.Key == ConsoleKey.D1) zmywarka();
             if (cki.Key == ConsoleKey.D2) lodowka();
-            if (cki.Key == ConsoleKey.D2) piec();
+			if (cki.Key == ConsoleKey.D2) piec();
+			
+            if (cki.Key == ConsoleKey.D5) Korytarz.korytarz(); //dodałem przejścia - kamil
+            if (cki.Key == ConsoleKey.D6) Salon.glowny(); //
         }  
 
         public static void zmywarka()

@@ -17,7 +17,6 @@ C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.runtimec
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.runtimeconfig.dev.json
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.dll
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\bin\Debug\netcoreapp3.1\Gra.pdb
-C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csprojAssemblyReference.cache
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.AssemblyInfoInputs.cache
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.AssemblyInfo.cs
 C:\Users\ksw09\Source\Repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csproj.CoreCompileInputs.cache
