@@ -17,7 +17,7 @@ namespace Gra
 				Console.WriteLine("######################################");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [1] OBRAZY                       #");
-				Console.WriteLine("#   [2] KOMODA						#");
+				Console.WriteLine("#   [2] KOMODA	           	#");
 				Console.WriteLine("#   [3] ZWISAJĄCA LAMPA              #");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [4] SALON                        #");
