@@ -367,7 +367,7 @@ namespace Gra
 
 
 			 if (cki.Key == ConsoleKey.D4) Korytarz.korytarz();
-			 //if (cki.Key == ConsoleKey.D5) kuchnia.glowny();
+			 if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
 		   
 			if (cki.Key == ConsoleKey.Q) Program.wyjscie();
 
