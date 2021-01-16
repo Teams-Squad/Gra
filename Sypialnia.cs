@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Gra
 {
     class Sypialnia
     {
-        public static void sypialnia()
+        public static void glowny()
         {
             ConsoleKeyInfo cki;
             do
@@ -20,9 +22,9 @@ namespace Gra
                 Console.WriteLine("#   [4] KOMODA                       #");
                 Console.WriteLine("#   [5] SZAFKA NOCNA                 #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [6] POWRÓT NA KORYTARZ           #");
+                Console.WriteLine("#   [6] KORYTARZ                     #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
+                Console.WriteLine("#   [Q] WYJŚCIE Z GRY                #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
@@ -33,8 +35,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D5) szafkanocna();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
             } while (cki.Key != ConsoleKey.D6);
-            Console.Clear();
-            //Korytarz.korytarz();
+            Korytarz.glowny();
         }
         private static void lozko()
         {
@@ -51,9 +52,9 @@ namespace Gra
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [1] SPRAWDŹ POD PODUSZKĄ         #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [2] WRÓĆ                         #");
+                Console.WriteLine("#   [R] WRÓĆ                         #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
+                Console.WriteLine("#   [Q] WYJŚCIE Z GRY                #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
@@ -69,17 +70,17 @@ namespace Gra
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("#     NIESTETY NIC NIE ZNALAZŁEŚ     #");
                         Console.WriteLine("#                                    #");
-                        Console.WriteLine("#   [1] WRÓĆ                         #");
+                        Console.WriteLine("#   [R] WRÓĆ                         #");
                         Console.WriteLine("#                                    #");
-                        Console.WriteLine("#   [Q] WYJŚCIE                      #");
+                        Console.WriteLine("#   [Q] WYJŚCIE Z GRY                #");
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("######################################");
                         cki = Console.ReadKey();
                         if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-                    } while (cki.Key != ConsoleKey.D1);
+                    } while (cki.Key != ConsoleKey.R);
                 }
-            } while (cki.Key != ConsoleKey.D2);
-            sypialnia();
+            } while (cki.Key != ConsoleKey.R);
+            // nie umieszczamy powrotu, bo wróci nam do funkcji głównej
         }
         private static void dywan()
         {

@@ -6,10 +6,10 @@ namespace Gra
 {
     class Korytarz
     {
-		public static void korytarz()
+		public static void glowny() // zmieniłem z 'korytarz' na 'glowny' - adam
 		{
 			{
-				Console.Clear();
+				Console.Clear(); // nie ma pętli, przez co wpisanie czegokolwiek będzie kończyć funkcję
 				ConsoleKeyInfo cki;
 
 				Console.WriteLine("######################################");
@@ -17,7 +17,7 @@ namespace Gra
 				Console.WriteLine("######################################");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [1] OBRAZY                       #");
-				Console.WriteLine("#   [2] KOMODA	           	#");
+				Console.WriteLine("#   [2] KOMODA	                	#");
 				Console.WriteLine("#   [3] ZWISAJĄCA LAMPA              #");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [4] SALON                        #");

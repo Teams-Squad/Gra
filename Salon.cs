@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace Gra
 {
@@ -11,7 +13,7 @@ namespace Gra
 			{
 				Console.Clear();
 				Console.WriteLine("############################################");
-				Console.WriteLine("#             SALON: BAREK                 #");
+				Console.WriteLine("#               SALON: BAREK               #");
 				Console.WriteLine("############################################");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#    ZNAJDUJESZ SIĘ PRZY OBIEKCIE BAREK,   #");
@@ -25,9 +27,9 @@ namespace Gra
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [1] PRZESZUKAJ                         #");
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [2] POWRÓT                             #");
+				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '2' na 'R' - adam
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [Q] WYJŚCIE                            #");
+				Console.WriteLine("#   [Q] WYJŚCIE Z GRY                      #"); // dopisałem 'z gry' - adam
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("############################################");
 
@@ -58,18 +60,19 @@ namespace Gra
 				Console.WriteLine("#   [2] SZAFKA                       #");
 				Console.WriteLine("#   [3] PUDEŁKO                      #");
 				Console.WriteLine("#                                    #");
-				Console.WriteLine("#   [4] POWRÓT                       #");
-				Console.WriteLine("#                                    #");
+				Console.WriteLine("#   [R] POWRÓT                       #"); // zmieniłem z '2' na 'R' - adam
+				Console.WriteLine("#                                    #"); // pamiętaj o dodaniu 'wyjście z gry' - adam
 				Console.WriteLine("######################################");
 
 				cki = Console.ReadKey();
-				  if (cki.Key == ConsoleKey.D1) półki();
+				  if (cki.Key == ConsoleKey.D1) półki(); // polskie znaki w funkcji informatycznie są źle postrzegane - adam
 					if (cki.Key == ConsoleKey.D2) szafka();
 				      if (cki.Key == ConsoleKey.D3) pudełko();
 
-				if (cki.Key == ConsoleKey.D4) barek();
+				//if (cki.Key == ConsoleKey.R) barek();
 
-			} while (cki.Key != ConsoleKey.D4);
+			} while (cki.Key != ConsoleKey.R);
+			barek();
 		}
 		private static void półki()
 		{
@@ -87,11 +90,11 @@ namespace Gra
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #");
-				Console.WriteLine("#   [1] POWRÓT                                #");
+				Console.WriteLine("#   [R] POWRÓT                                #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("###############################################");
 				cki = Console.ReadKey();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_barek();
+			} while (cki.Key != ConsoleKey.R); przeszukaj_barek();
 		}
 		private static void szafka()
 		{
@@ -109,11 +112,11 @@ namespace Gra
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #");
-				Console.WriteLine("#   [1] POWRÓT                                #");
+				Console.WriteLine("#   [R] POWRÓT                                #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("###############################################");
 				cki = Console.ReadKey();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_barek();
+			} while (cki.Key != ConsoleKey.R); przeszukaj_barek();
 		}
 		private static void pudełko()
 		{
@@ -134,11 +137,11 @@ namespace Gra
 				Console.WriteLine("#     LEPIEJ TEGO NIE RUSZAĆ                  #");
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #"); 
-				Console.WriteLine("#   [1] POWRÓT                                #");
+				Console.WriteLine("#   [R] POWRÓT                                #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("###############################################");
 				cki = Console.ReadKey();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_barek();
+			} while (cki.Key != ConsoleKey.R); przeszukaj_barek();
 		}
 
 		private static void stojak()
@@ -162,7 +165,7 @@ namespace Gra
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [1] PRZESZUKAJ                         #");
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [2] POWRÓT                             #");
+				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '2' na 'R' - adam
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
@@ -170,7 +173,7 @@ namespace Gra
 
 				cki = Console.ReadKey();
 
-				if (cki.Key == ConsoleKey.D2)
+				if (cki.Key == ConsoleKey.R)
 					glowny();
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
 			} while (cki.Key != ConsoleKey.D1); przeszukaj_stojak();
@@ -192,7 +195,7 @@ namespace Gra
 				Console.WriteLine("#    NIESTETY NA WYTARTYM JUŻ WINYLU,      #");
 				Console.WriteLine("#    PRÓŻNO SZUKAĆ AUTORA...               #");
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [1] POWRÓT                             #");
+				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
@@ -203,7 +206,7 @@ namespace Gra
 				
 					
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-			} while (cki.Key != ConsoleKey.D1);stojak();
+			} while (cki.Key != ConsoleKey.R);stojak();
 		}
 
 		private static void kanapa()
@@ -228,7 +231,7 @@ namespace Gra
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [1] PRZESZUKAJ                         #");
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [2] POWRÓT                             #");
+				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '2' na 'R' - adam
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
@@ -236,10 +239,10 @@ namespace Gra
 
 				cki = Console.ReadKey();
 
-				if (cki.Key == ConsoleKey.D2)
+				if (cki.Key == ConsoleKey.R) 
 					glowny();
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_kanapa();
+			} while (cki.Key != ConsoleKey.D1); przeszukaj_kanapa(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
 		}
 
 		private static void przeszukaj_kanapa()
@@ -260,8 +263,8 @@ namespace Gra
 				Console.WriteLine("#   [2] ZDEJMIJ PODUSZKI I SPRAWDŹ KANAPĘ  #");
 				Console.WriteLine("#   [3] SPRWADŹ WNĘTRZA PODUSZEK           #");
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [4] POWRÓT                             #"); 
-				Console.WriteLine("#                                          #");
+				Console.WriteLine("#   [R] POWRÓT                             #"); 
+				Console.WriteLine("#                                          #"); // zmieniłem z '4' na 'R' - adam
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("############################################");
@@ -270,7 +273,7 @@ namespace Gra
 
 				if (cki.Key == ConsoleKey.D2)  zdejmij_poduszki_sprawdź();
 				if (cki.Key == ConsoleKey.D3) sprawdź_poduszki();
-				if (cki.Key == ConsoleKey.D4) glowny();
+				if (cki.Key == ConsoleKey.R) glowny(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
 
 
 
@@ -292,11 +295,11 @@ namespace Gra
 				Console.WriteLine("#     NIKT NIE ZAGLĄDAŁ TUTAJ OD LAT          #");
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #");
-				Console.WriteLine("#   [1] POWRÓT                                #");
+				Console.WriteLine("#   [R] POWRÓT                                #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("###############################################");
 				cki = Console.ReadKey();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_kanapa();
+			} while (cki.Key != ConsoleKey.R); przeszukaj_kanapa();
 		}
 		private static void sprawdź_poduszki()
 		{
@@ -313,11 +316,11 @@ namespace Gra
 				Console.WriteLine("#     PODCZAS SPALANIA WYTWARZAŁ TRUJĄCY GAZ, #");
 				Console.WriteLine("#     LEPIEJ TEGO NIE RUSZAĆ                  #");
 				Console.WriteLine("#                                             #");
-				Console.WriteLine("#   [1] POWRÓT                                #");
+				Console.WriteLine("#   [R] POWRÓT                                #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("###############################################");
 				cki = Console.ReadKey();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_kanapa();
+			} while (cki.Key != ConsoleKey.R); przeszukaj_kanapa();
 		}
 
 		private static void zdejmij_poduszki_sprawdź()
@@ -334,14 +337,14 @@ namespace Gra
 				Console.WriteLine("#     EKSKLUZYWNEJ KANAPY W STYLU VINTAGE     #");		
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("#                                             #");
-				Console.WriteLine("#   [1] POWRÓT                                #");
+				Console.WriteLine("#   [R] POWRÓT                                #"); // zmieniłem z '1' na 'R' - adam
 				Console.WriteLine("#                                             #");
 				Console.WriteLine("###############################################");
 				cki = Console.ReadKey();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_kanapa();
+			} while (cki.Key != ConsoleKey.R); przeszukaj_kanapa();
 		}
 		public static void glowny()
-					{
+		{
 			            Console.Clear();
 			            ConsoleKeyInfo cki;
 
@@ -366,7 +369,7 @@ namespace Gra
 			               if (cki.Key == ConsoleKey.D3) kanapa();
 
 
-			 if (cki.Key == ConsoleKey.D4) Korytarz.korytarz();
+			 if (cki.Key == ConsoleKey.D4) Korytarz.glowny(); // zmieniłem na poprawną nazwę funkcji - adam
 			 if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
 		   
 			if (cki.Key == ConsoleKey.Q) Program.wyjscie();

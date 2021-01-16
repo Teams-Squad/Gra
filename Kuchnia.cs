@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Gra
 {
-    class Kuchnia
+    class Kuchnia // żadna z funkcji nie ma pętli, przez co wpisanie czegokolwiek będzie kończyć funkcję - adam
     {
         
-
+                // zamień 'powrót' z numeru na 'R' - adam
 
             public static void piec_palenisko()
             {
@@ -235,7 +235,7 @@ namespace Gra
                 Console.WriteLine("#   [1] OTWÓRZ                       #");
                 Console.WriteLine("#   [2] PRZYJRZYJ SIĘ                #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [2] POWRÓT                       #");
+                Console.WriteLine("#   [R] POWRÓT                       #"); // zmieniłem z '2' na 'R' - adam
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [Esc] WYJŚCIE                    #");
@@ -246,12 +246,12 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D1) zmywarka_otworz();
                 if (cki.Key == ConsoleKey.D2) zmywarka_przyjrzyj();
                 if (cki.Key == ConsoleKey.D3) glowny();
-                if (cki.Key == ConsoleKey.Escape) Program.wyjscie();
+                if (cki.Key == ConsoleKey.R) Program.wyjscie();
             }
 
         public static void glowny()
         {
-            Console.Clear();
+            Console.Clear(); 
             ConsoleKeyInfo cki;
             Console.WriteLine("######################################");
             Console.WriteLine("#              KUCHNIA               #");
@@ -265,7 +265,7 @@ namespace Gra
             Console.WriteLine("#   [5] SALON                        #");
             Console.WriteLine("#                                    #");
             Console.WriteLine("#                                    #");
-            Console.WriteLine("#   [Esc] WYJŚCIE                    #");
+            Console.WriteLine("#   [Q] WYJŚCIE                      #"); // zmieniłem 'esc' na 'Q' - adam
             Console.WriteLine("#                                    #");
             Console.WriteLine("######################################");
 
@@ -275,7 +275,7 @@ namespace Gra
 			if (cki.Key == ConsoleKey.D3) piec();
             if (cki.Key == ConsoleKey.D4) Korytarz.korytarz();
             if (cki.Key == ConsoleKey.D5) Salon.glowny();
-            if (cki.Key == ConsoleKey.Escape) Program.wyjscie();
+            if (cki.Key == ConsoleKey.Q) Program.wyjscie();
         }  
     }
 }

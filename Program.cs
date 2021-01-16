@@ -1,13 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 
 namespace Gra
 {
-    static class Program
+    class Program
     {
-        public static int skrytka;
+        // do poprawy, bo sam nie wiem jak zrobić ten system xd
+        public static int skrytka();
         public static int[] kod = new int[3];
-        public static int klucz = 0;
+        int klucz = 0;
+        public int znalezienie() 
+        {
+            klucz++;
+        }
 
         public static void nowagra()
         {
@@ -88,7 +95,6 @@ namespace Gra
                 if (cki.Key == ConsoleKey.Q) wyjscie();
                 if (cki.Key == ConsoleKey.D2) zasady();
             } while (cki.Key != ConsoleKey.D1);
-            Console.Clear();
            // loading();           //wyłączyłem ładowanie bo mi przeszkadzało - kamil
             Salon.glowny();
         }
