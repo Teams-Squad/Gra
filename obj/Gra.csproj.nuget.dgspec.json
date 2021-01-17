@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj": {}
+    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj": {
+    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
+        "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj",
         "projectName": "Gra",
-        "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\Gra.csproj",
+        "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj",
         "packagesPath": "C:\\Users\\uzytkownik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra\\obj\\",
+        "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\uzytkownik\\AppData\\Roaming\\NuGet\\NuGet.Config",
