@@ -8,7 +8,7 @@ namespace Gra
     {
 		public static void glowny()                                      //kolejne przejście
 		{
-			Console.Clear();
+			Console.Clear(); // nie ma pętli, przez co wpisanie czegokolwiek będzie kończyć funkcję
 			ConsoleKeyInfo cki;
 
 			Console.WriteLine("######################################");
@@ -19,8 +19,8 @@ namespace Gra
 			Console.WriteLine("#                                    #");
 			Console.WriteLine("#                                    #");
 			Console.WriteLine("#                                    #");
-			Console.WriteLine("#   [4] KORYTARZ                     #");
-			Console.WriteLine("#                                    #");
+			Console.WriteLine("#   [R] KORYTARZ                     #"); // zmieniłem z '4' na 'R' - adam
+			Console.WriteLine("#			                        #");
 			Console.WriteLine("#                                    #");
 			Console.WriteLine("#   [Q] WYJŚCIE                      #");
 			Console.WriteLine("#                                    #");
@@ -30,7 +30,7 @@ namespace Gra
 			
 
 
-			if (cki.Key == ConsoleKey.D4)  Korytarz.korytarz(); 
+			if (cki.Key == ConsoleKey.R) Korytarz.korytarz();
 			
 
 			if (cki.Key == ConsoleKey.Q) Program.wyjscie();
