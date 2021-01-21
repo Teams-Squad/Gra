@@ -8,21 +8,21 @@ namespace Gra
     class Program
     {
         // do poprawy, bo sam nie wiem jak zrobić ten system xd
-        public static int skrytka();
-        public static int[] kod = new int[3];
-        int klucz = 0;
-        public int znalezienie() 
-        {
-            klucz++;
-        }
+        /*   public static int skrytka();
+           public static int[] kod = new int[3];
+           int klucz = 0;
+           public int znalezienie()                                   //wyłączyłem to na chwilę 
+           {
+               klucz++;
+           }
 
-        public static void nowagra()
-        {
-            Random rnd = new Random();
-            skrytka = rnd.Next(1, 4);
-            for (int i = 0; i <= 2; i++) kod[i] = rnd.Next(1, 10);
-            //test
-        }
+           public static void nowagra()
+           {
+               Random rnd = new Random();
+               skrytka = rnd.Next(1, 4);
+               for (int i = 0; i <= 2; i++) kod[i] = rnd.Next(1, 10);
+               //test
+           } */
         public static void loading()
         {
             Console.Clear();

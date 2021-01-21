@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj": {}
+    "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj": {
+    "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj",
+        "projectUniqueName": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
         "projectName": "Gra",
-        "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\Gra.csproj",
-        "packagesPath": "C:\\Users\\uzytkownik\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra3\\obj\\",
+        "projectPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
+        "packagesPath": "C:\\Users\\ksw09\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\uzytkownik\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ksw09\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

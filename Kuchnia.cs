@@ -380,7 +380,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D4) Korytarz.glowny();
                 if (cki.Key == ConsoleKey.D5) Salon.glowny();
 
-            } while (cki.Key != ConsoleKaey.Q); Program.wyjscie();
+            } while (cki.Key != ConsoleKey.Q); Program.wyjscie();
         }
     }
 }

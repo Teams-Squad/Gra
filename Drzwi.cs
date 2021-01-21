@@ -33,7 +33,7 @@ namespace Gra
 				Console.WriteLine("######################################");
 
 				cki = Console.ReadKey();
-				if (cki.Key == ConsoleKey.D3)  Korytarz.korytarz();
+				if (cki.Key == ConsoleKey.D3)  Korytarz.glowny();
 				
 
 			}
