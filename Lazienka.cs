@@ -30,7 +30,7 @@ namespace Gra
 			
 
 
-			if (cki.Key == ConsoleKey.R) Korytarz.korytarz();
+			if (cki.Key == ConsoleKey.R) Korytarz.glowny();
 			
 
 			if (cki.Key == ConsoleKey.Q) Program.wyjscie();

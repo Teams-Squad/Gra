@@ -6,7 +6,7 @@ namespace Gra
 {
     class Korytarz
     {
-		public static void korytarz()
+		public static void glowny() // poprawa nazwy - adam
 		{
 			{
 				Console.Clear();
@@ -34,7 +34,7 @@ namespace Gra
 				if (cki.Key == ConsoleKey.D4)  Salon.glowny();
 				if (cki.Key == ConsoleKey.D5)  Kuchnia.glowny();
 				if (cki.Key == ConsoleKey.D6)  Lazienka.glowny();
-				if (cki.Key == ConsoleKey.D7)  Sypialnia.sypialnia();
+				if (cki.Key == ConsoleKey.D7)  Sypialnia.glowny(); // poprawa nazwy - adam
 				if (cki.Key == ConsoleKey.D8)  Drzwi.drzwi();
 
 			}

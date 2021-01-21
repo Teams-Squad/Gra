@@ -7,22 +7,26 @@ namespace Gra
 {
     class Program
     {
-        // do poprawy, bo sam nie wiem jak zrobić ten system xd
-        public static int skrytka();
         public static int[] kod = new int[3];
-        int klucz = 0;
-        public int znalezienie() 
+        public static int klucz = 0;
+        public static void znalezienieKlucza()
         {
             klucz++;
         }
+        public static int czyKlucz()
+        {
+            if (klucz==0) return 0;
+            else return 1;
+        }
 
-        public static void nowagra()
+        /*public static void nowagra()
         {
             Random rnd = new Random();
-            skrytka = rnd.Next(1, 4);
+            //skrytka = rnd.Next(1, 4);
             for (int i = 0; i <= 2; i++) kod[i] = rnd.Next(1, 10);
             //test
-        }
+        } 
+        */
         public static void loading()
         {
             Console.Clear();
@@ -50,7 +54,7 @@ namespace Gra
                 Console.WriteLine("#       MUSISZ PRZESZUKAĆ DOM,       #");
                 Console.WriteLine("#    ABY ZNALEŹĆ KLUCZ DO WYJŚCIA    #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#            [Q] POWRÓT              #"); // zmniełem 1 na Q - kamil
+                Console.WriteLine("#            [Q] POWRÓT              #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
@@ -89,14 +93,14 @@ namespace Gra
                 Console.WriteLine("#           [1] START                #");
                 Console.WriteLine("#           [2] ZASADY               #");
                 Console.WriteLine("#           [Q] WYJŚCIE              #");
-                Console.WriteLine("#                                    #");
+                Console.WriteLine("#                                    # T - Test");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) wyjscie();
                 if (cki.Key == ConsoleKey.D2) zasady();
-            } while (cki.Key != ConsoleKey.D1); Program.loading();
-            Console.Clear();
-           // loading();           //wyłączyłem ładowanie bo mi przeszkadzało - kamil
+                //if (cki.Key == ConsoleKey.T) Test.test1();        // do testów
+            } while (cki.Key != ConsoleKey.D1);
+           // loading();
             Salon.glowny();
         }
     }
