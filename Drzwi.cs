@@ -13,7 +13,7 @@ namespace Gra
 
 
 
-		public static void drzwi() // lepiej zrobiæ 'glowny' bo potem bêdzie ³atwiej pisaæ
+		public static void glowny() // lepiej zrobiæ 'glowny' bo potem bêdzie ³atwiej pisaæ
 		{
 			{
 				Console.Clear();

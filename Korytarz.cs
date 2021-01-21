@@ -35,7 +35,7 @@ namespace Gra
 				if (cki.Key == ConsoleKey.D5)  Kuchnia.glowny();
 				if (cki.Key == ConsoleKey.D6)  Lazienka.glowny();
 				if (cki.Key == ConsoleKey.D7)  Sypialnia.glowny(); // poprawa nazwy - adam
-				if (cki.Key == ConsoleKey.D8)  Drzwi.drzwi();
+				if (cki.Key == ConsoleKey.D8)  Drzwi.glowny();
 
 			}
 
