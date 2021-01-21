@@ -33,7 +33,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D3) szafa();
                 if (cki.Key == ConsoleKey.D4) komoda();
 				if (cki.Key == ConsoleKey.D5) szafkanocna();
-                if (cki.Key == ConsoleKey.D6)  Korytarz.glowny(); //też moje przejście - kamil
+                if (cki.Key == ConsoleKey.D6)  Korytarz.glowny();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
             } while (cki.Key != ConsoleKey.D6);
             Korytarz.glowny();

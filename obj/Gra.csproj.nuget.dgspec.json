@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj": {}
+    "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj": {
+    "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
+        "projectUniqueName": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj",
         "projectName": "Gra",
-        "projectPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
-        "packagesPath": "C:\\Users\\ksw09\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\obj\\",
+        "projectPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj",
+        "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+        "outputPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ksw09\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Adam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,7 +30,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -54,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -39,7 +39,7 @@ namespace Gra
 
         public static void obraz()
         {
-            ConsoleKeyInfo cki;
+            //ConsoleKeyInfo cki;
         }
 
         public static void figurka()
@@ -380,7 +380,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D4) Korytarz.glowny();
                 if (cki.Key == ConsoleKey.D5) Salon.glowny();
 
-            } while (cki.Key != ConsoleKey.Q); Program.wyjscie();
+            } while (cki.Key != ConsoleKey.Q); Program.wyjscie(); // zmień to , bo potem jak ktoś nie będzie chiał wychodzić i będzie chciał wrócić to go wywali nie wiadomo gdzie - adam
         }
     }
 }
