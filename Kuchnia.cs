@@ -140,51 +140,7 @@ namespace Gra
             } while (cki.Key != ConsoleKey.R); glowny();
         }
 
-        public static void zmywarka_otworz_sztucce()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#      ZMYWARKA: OTWÓRZ: SZTUĆCE     #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   tu będzie jakiś poetycki tekst   #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWRÓT                       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
-                cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); zmywarka_otworz();
-        }
-
-        public static void zmywarka_otworz_zastawa()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#      ZMYWARKA: OTWÓRZ: ZASTAWA     #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   tu będzie jakiś poetycki tekst   #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWRÓT                       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
-                cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); zmywarka_otworz();
-        }
+       
 
         public static void zmywarka()
         {
@@ -193,13 +149,10 @@ namespace Gra
             {
                 Console.Clear();
                 Console.WriteLine("######################################");
-                Console.WriteLine("#           ZMYWARKA: OTWÓZ          #");
+                Console.WriteLine("#              ZMYWARKA              #");
                 Console.WriteLine("######################################");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   tu będzie jakiś poetycki tekst   #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [1] PRZEJRZYJ ZASTAWĘ            #");
-                Console.WriteLine("#   [2] SPRAWDŹ SZTUĆCE              #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [R] POWRÓT                       #");
                 Console.WriteLine("#                                    #");
@@ -207,14 +160,12 @@ namespace Gra
                 Console.WriteLine("#   [Q] WYJŚCIE                      #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
-
                 cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.D1) zmywarka_otworz_zastawa();
-                if (cki.Key == ConsoleKey.D2) zmywarka_otworz_sztucce();
-
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); zmywarka();
+            } while (cki.Key != ConsoleKey.R); glowny();
         }
+
+        
 
       
 
