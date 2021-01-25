@@ -263,7 +263,7 @@ namespace Gra
 				cki = Console.ReadKey();
 				if (cki.Key == ConsoleKey.D1) Obrazy(); 
 				if (cki.Key == ConsoleKey.D2) Komoda();
-				if (cki.Key == ConsoleKey.D3) Zwisająca_lampa();
+				if (cki.Key == ConsoleKey.D3) Lampa();
 				    if (cki.Key == ConsoleKey.D4) Salon.glowny();
 					if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
 					if (cki.Key == ConsoleKey.D6) Lazienka.glowny();

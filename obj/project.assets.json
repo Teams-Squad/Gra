@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\ksw09\\.nuget\\packages\\": {}
+    "C:\\Users\\uzytkownik\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
+      "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\testfinal\\Gra.csproj",
       "projectName": "Gra",
-      "projectPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
-      "packagesPath": "C:\\Users\\ksw09\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\obj\\",
+      "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\testfinal\\Gra.csproj",
+      "packagesPath": "C:\\Users\\uzytkownik\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\testfinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ksw09\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\uzytkownik\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
