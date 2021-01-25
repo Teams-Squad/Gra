@@ -35,9 +35,10 @@ namespace Gra
 
 				cki = Console.ReadKey();
 
-				if (cki.Key == ConsoleKey.D2)
-					glowny();
+				if (cki.Key == ConsoleKey.R)  glowny();
+
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
+				  
 			} while (cki.Key != ConsoleKey.D1); przeszukaj_barek() ;
 		}
 
@@ -61,17 +62,18 @@ namespace Gra
 				Console.WriteLine("#   [3] PUDEŁKO                      #");
 				Console.WriteLine("#                                    #");
 				Console.WriteLine("#   [R] POWRÓT                       #"); // zmieniłem z '2' na 'R' - adam
-				Console.WriteLine("#                                    #"); // pamiętaj o dodaniu 'wyjście z gry' - adam
+				Console.WriteLine("#   [Q] WYJŚCIE                      #");
+				Console.WriteLine("#                                    #");
 				Console.WriteLine("######################################");
 
 				cki = Console.ReadKey();
 				  if (cki.Key == ConsoleKey.D1) półki(); // polskie znaki w funkcji informatycznie są źle postrzegane - adam
 					if (cki.Key == ConsoleKey.D2) szafka();
 					  if (cki.Key == ConsoleKey.D3) pudełko();
+				         if (cki.Key == ConsoleKey.Q) Program.wyjscie();
 
-				//if (cki.Key == ConsoleKey.R) barek();
 
-			} while (cki.Key != ConsoleKey.R);
+			} while (cki.Key != ConsoleKey.R); Salon.barek();
 			barek();
 		}
 		private static void półki()
@@ -166,7 +168,6 @@ namespace Gra
 				Console.WriteLine("#   [1] PRZESZUKAJ                         #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '2' na 'R' - adam
-				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("############################################");
@@ -196,7 +197,6 @@ namespace Gra
 				Console.WriteLine("#    PRÓŻNO SZUKAĆ AUTORA...               #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '1' na 'R' - adam
-				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("############################################");
@@ -232,17 +232,17 @@ namespace Gra
 				Console.WriteLine("#   [1] PRZESZUKAJ                         #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [R] POWRÓT                             #"); // zmieniłem z '2' na 'R' - adam
-				Console.WriteLine("#                                          #");
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("############################################");
 
 				cki = Console.ReadKey();
 
-				if (cki.Key == ConsoleKey.R) 
-					glowny();
+				
+					
+				if (cki.Key == ConsoleKey.D1) przeszukaj_kanapa();
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-			} while (cki.Key != ConsoleKey.D1); przeszukaj_kanapa(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
+			} while (cki.Key == ConsoleKey.R); glowny(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
 		}
 
 		private static void przeszukaj_kanapa()
@@ -263,8 +263,7 @@ namespace Gra
 				Console.WriteLine("#   [2] ZDEJMIJ PODUSZKI I SPRAWDŹ KANAPĘ  #");
 				Console.WriteLine("#   [3] SPRWADŹ WNĘTRZA PODUSZEK           #");
 				Console.WriteLine("#                                          #");
-				Console.WriteLine("#   [R] POWRÓT                             #"); 
-				Console.WriteLine("#                                          #"); // zmieniłem z '4' na 'R' - adam
+				Console.WriteLine("#   [R] POWRÓT                             #");  // zmieniłem z '4' na 'R' - adam
 				Console.WriteLine("#   [Q] WYJŚCIE                            #");
 				Console.WriteLine("#                                          #");
 				Console.WriteLine("############################################");
@@ -273,12 +272,12 @@ namespace Gra
 
 				if (cki.Key == ConsoleKey.D2)  zdejmij_poduszki_sprawdź();
 				if (cki.Key == ConsoleKey.D3) sprawdź_poduszki();
-				if (cki.Key == ConsoleKey.R) glowny(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
+				if (cki.Key != ConsoleKey.D1) sprawdź_pod_kanapą(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
 
 
 
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-			} while (cki.Key != ConsoleKey.D1); sprawdź_pod_kanapą();
+			} while (cki.Key != ConsoleKey.R);  glowny();
 		}
 		private static void sprawdź_pod_kanapą()
 		{
@@ -345,34 +344,39 @@ namespace Gra
 		}
 		public static void glowny()
 		{
-			            Console.Clear();
-			            ConsoleKeyInfo cki;
-
-						Console.WriteLine("######################################");
-						Console.WriteLine("#                SALON               #");
-						Console.WriteLine("######################################");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("#   [1] BAREK                        #");
-						Console.WriteLine("#   [2] STOJAK NA PŁYTY              #");
-						Console.WriteLine("#   [3] KANAPA                       #");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("#   [4] KORYTARZ                     #");
-						Console.WriteLine("#   [5] KUCHNIA                      #");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("#   [Q] WYJŚCIE                      #");
-						Console.WriteLine("#                                    #");
-						Console.WriteLine("######################################");
-
-			cki = Console.ReadKey();
-						if (cki.Key == ConsoleKey.D1) barek();
-						  if (cki.Key == ConsoleKey.D2) stojak();
-						   if (cki.Key == ConsoleKey.D3) kanapa();
+			ConsoleKeyInfo cki;
+			
+			do
+			{
 
 
-			 if (cki.Key == ConsoleKey.D4) Korytarz.glowny(); // zmieniłem na poprawną nazwę funkcji - adam
-			 if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
-		   
-			if (cki.Key == ConsoleKey.Q) Program.loading(); Program.wyjscie();
+				Console.Clear();
+				Console.WriteLine("######################################");
+				Console.WriteLine("#                SALON               #");
+				Console.WriteLine("######################################");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("#   [1] BAREK                        #");
+				Console.WriteLine("#   [2] STOJAK NA PŁYTY              #");
+				Console.WriteLine("#   [3] KANAPA                       #");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("#   [4] KORYTARZ                     #");
+				Console.WriteLine("#   [5] KUCHNIA                      #");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("#   [Q] WYJŚCIE                      #");
+				Console.WriteLine("#                                    #");
+				Console.WriteLine("######################################");
+
+				cki = Console.ReadKey();
+				if (cki.Key == ConsoleKey.D1) barek();
+				if (cki.Key == ConsoleKey.D2) stojak();
+				if (cki.Key == ConsoleKey.D3) kanapa();
+
+
+				if (cki.Key == ConsoleKey.D4) Korytarz.glowny(); // zmieniłem na poprawną nazwę funkcji - adam
+				if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
+
+			} while (cki.Key != ConsoleKey.Q); Program.loading(); Program.wyjscie();
+			
 
 		}
 
