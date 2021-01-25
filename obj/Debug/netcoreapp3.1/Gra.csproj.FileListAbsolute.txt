@@ -75,3 +75,4 @@ C:\Users\uzytkownik\Source\Repos\Gra25.01zladowaniem\bin\Debug\netcoreapp3.1\Gra
 C:\Users\uzytkownik\Source\Repos\Gra25.01zladowaniem\bin\Debug\netcoreapp3.1\Gra.dll
 C:\Users\uzytkownik\Source\Repos\Gra25.01zladowaniem\bin\Debug\netcoreapp3.1\Gra.pdb
 C:\Users\uzytkownik\Source\Repos\Gra25.01zladowaniem\obj\Debug\netcoreapp3.1\Gra.genruntimeconfig.cache
+C:\Users\ksw09\source\repos\Teams-Squad\Gra\obj\Debug\netcoreapp3.1\Gra.csprojAssemblyReference.cache

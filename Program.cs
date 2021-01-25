@@ -83,12 +83,11 @@ namespace Gra
                 Console.WriteLine("#           [1] START                #");
                 Console.WriteLine("#           [2] ZASADY               #");
                 Console.WriteLine("#           [Q] WYJŚCIE              #");
-                Console.WriteLine("#                                    # T - Test");
+                Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) wyjscie();
                 if (cki.Key == ConsoleKey.D2) zasady();
-                //if (cki.Key == ConsoleKey.T) Test.test1();        // do testów
             } while (cki.Key != ConsoleKey.D1);
             loading();
             Salon.glowny();
