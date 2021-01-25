@@ -4,7 +4,6 @@ namespace Gra
 {
     class Kuchnia
     {
-
         public static void szafka_trzecia()
         {
             ConsoleKeyInfo cki;
@@ -29,7 +28,7 @@ namespace Gra
                 Console.WriteLine("############################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); glowny();
+            } while (cki.Key != ConsoleKey.R); szafki();
         }
 
         public static void szafka_druga()
@@ -54,7 +53,7 @@ namespace Gra
                 Console.WriteLine("############################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); glowny();
+            } while (cki.Key != ConsoleKey.R); szafki();
         }
 
         public static void szafka_pierwsza()
@@ -83,7 +82,7 @@ namespace Gra
                 Console.WriteLine("############################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); glowny();
+            } while (cki.Key != ConsoleKey.R); szafki();
         }
 
         public static void szafki()
@@ -285,8 +284,8 @@ public static void piekarnik()
                 if (cki.Key == ConsoleKey.D3) kuchenka();
                 if (cki.Key == ConsoleKey.D4) szafki();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-                if (cki.Key == ConsoleKey.D4) Korytarz.glowny();
-                if (cki.Key == ConsoleKey.D5) Salon.glowny();
+                if (cki.Key == ConsoleKey.D5) Korytarz.glowny();
+                if (cki.Key == ConsoleKey.D6) Salon.glowny();
             } while (cki.Key != ConsoleKey.D5 || cki.Key != ConsoleKey.D4);
             
             
