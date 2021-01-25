@@ -4,99 +4,14 @@ namespace Gra
 {
     class Kuchnia
     {
-
-
-
-
-        public static void palenisko()
+        public static void piekarnik()
         {
             ConsoleKeyInfo cki;
             do
             {
                 Console.Clear();
                 Console.WriteLine("######################################");
-                Console.WriteLine("#          PIEC: PALENISKO           #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#     tu będzie poetycki tekst       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [1] PRZESZUKAJ POPIÓŁ            #");
-                Console.WriteLine("#   [2] OBEJRZYJ KOMIN               #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWRÓT                       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
-                cki = Console.ReadKey();
-                //if (cki.Key == ConsoleKey.D1) popiol();
-                //if (cki.Key == ConsoleKey.D2) komin();
-                if (cki.Key == ConsoleKey.D3) piec();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); piec();
-        }
-
-        public static void obraz()
-        {
-            //ConsoleKeyInfo cki;
-        }
-
-        public static void figurka()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#         PIEC: PÓŁKA: FIGURKA       #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#     tu będzie poetycki tekst       #");
-                Console.WriteLine("#                                    #");
-                cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.D1) figurka();
-                if (cki.Key == ConsoleKey.D2) obraz();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key == ConsoleKey.R); piec();
-        }
-
-        public static void polka()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#             PIEC: PÓŁKA            #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#     tu będzie poetycki tekst       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [1] SPRAWDŹ FIGURKĘ              #");
-                Console.WriteLine("#   [2] OBEJRZYJ OBRAZ               #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWROT                       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
-                cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.D1) figurka();
-                if (cki.Key == ConsoleKey.D2) obraz();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key == ConsoleKey.R); piec();
-        }
-
-        public static void stojak()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#             PIEC: STOJAK           #");
+                Console.WriteLine("#              PIEKARNIK             #");
                 Console.WriteLine("######################################");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#     tu będzie poetycki tekst       #");
@@ -109,33 +24,56 @@ namespace Gra
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key == ConsoleKey.R); piec();
+            } while (cki.Key != ConsoleKey.R); kuchenka();
         }
 
-        public static void piec()
+
+        public static void czajnik()
         {
             ConsoleKeyInfo cki;
             do
             {
                 Console.Clear();
                 Console.WriteLine("######################################");
-                Console.WriteLine("#                PIEC                #");
+                Console.WriteLine("#         KUCHENKA: CZAJNIK          #");
                 Console.WriteLine("######################################");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [1] SPRAWDŹ PALENISKO            #");
-                Console.WriteLine("#   [2] OBEJRZYJ PÓŁKĘ               #");
-                Console.WriteLine("#   [3] SPRAWDŹ STOJAK NA DREWNO     #");
+                Console.WriteLine("#     tu będzie poetycki tekst       #");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWRÓT                       #");
+                Console.WriteLine("#   [R] POWROT                       #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [Q] WYJŚCIE                      #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.D1) palenisko();
-                if (cki.Key == ConsoleKey.D2) polka();
-                if (cki.Key == ConsoleKey.D3) stojak();
+                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
+            } while (cki.Key != ConsoleKey.R); kuchenka();
+        }
+
+
+        public static void kuchenka()
+        {
+            ConsoleKeyInfo cki;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("######################################");
+                Console.WriteLine("#          KUCHENKA                  #");
+                Console.WriteLine("######################################");
+                Console.WriteLine("#                                    #");
+                Console.WriteLine("#   [1] SPRAWDŹ CZAJNIK              #");
+                Console.WriteLine("#   [2] OTWÓRZ PIEKARNIK             #");
+                Console.WriteLine("#                                    #");
+                Console.WriteLine("#   [R] POWROT                       #");
+                Console.WriteLine("#                                    #");
+                Console.WriteLine("#                                    #");
+                Console.WriteLine("#   [Q] WYJŚCIE                      #");
+                Console.WriteLine("#                                    #");
+                Console.WriteLine("######################################");
+                cki = Console.ReadKey();
+                if (cki.Key == ConsoleKey.D1) czajnik();
+                if (cki.Key == ConsoleKey.D2) piekarnik();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
             } while (cki.Key != ConsoleKey.R); glowny();
         }
@@ -148,29 +86,12 @@ namespace Gra
 
 
 
-        public static void lodowka_otworzam()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#        LODÓWKA: ZAMRAŻARKA         #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#     tu będzie poetycki tekst       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWROT                       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
-                cki = Console.ReadKey();
 
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); lodowka();
-        }
+
+
+
+
+
 
         public static void lodowka_otworz()
         {
@@ -205,8 +126,7 @@ namespace Gra
                 Console.WriteLine("#              LODÓWKA               #");
                 Console.WriteLine("######################################");
                 Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [1] OTWÓRZ                       #");
-                Console.WriteLine("#   [2] OTWÓRZ ZAMRAŻARKĘ            #");
+                Console.WriteLine("#   tu będzie tekst                  #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [R] POWROT                       #");
                 Console.WriteLine("#                                    #");
@@ -216,7 +136,6 @@ namespace Gra
                 Console.WriteLine("######################################");
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.D1) lodowka_otworz();
-                if (cki.Key == ConsoleKey.D2) lodowka_otworzam();
                 if (cki.Key == ConsoleKey.Q) Program.wyjscie();
             } while (cki.Key != ConsoleKey.R); glowny();
         }
@@ -267,7 +186,7 @@ namespace Gra
             } while (cki.Key != ConsoleKey.R); zmywarka_otworz();
         }
 
-        public static void zmywarka_otworz()
+        public static void zmywarka()
         {
             ConsoleKeyInfo cki;
             do
@@ -297,63 +216,15 @@ namespace Gra
             } while (cki.Key != ConsoleKey.R); zmywarka();
         }
 
-        public static void zmywarka_przyjrzyj()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#        ZMYWARKA: PRZYJRZYJ         #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   tu będzie jakiś poetycki tekst   #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWRÓT                       #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
+      
 
-                cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); zmywarka();
-        }
+        
 
-
-        public static void zmywarka()
-        {
-            ConsoleKeyInfo cki;
-            do
-            {
-                Console.Clear();
-                Console.WriteLine("######################################");
-                Console.WriteLine("#              ZMYWARKA              #");
-                Console.WriteLine("######################################");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   tu będzie jakiś poetycki tekst   #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [1] OTWÓRZ                       #");
-                Console.WriteLine("#   [2] PRZYJRZYJ SIĘ                #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [R] POWRÓT                       #"); 
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("#   [Q] WYJŚCIE                      #");
-                Console.WriteLine("#                                    #");
-                Console.WriteLine("######################################");
-
-                cki = Console.ReadKey();
-                if (cki.Key == ConsoleKey.D1) zmywarka_otworz();
-                if (cki.Key == ConsoleKey.D2) zmywarka_przyjrzyj();
-                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
-            } while (cki.Key != ConsoleKey.R); glowny();
-        }
-
+        
         public static void glowny()
         {
             ConsoleKeyInfo cki;
+
             do
             {
                 Console.Clear();
@@ -363,7 +234,7 @@ namespace Gra
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [1] ZMYWARKA                     #");
                 Console.WriteLine("#   [2] LODÓWKA                      #");
-                Console.WriteLine("#   [3] PIEC                         #");
+                Console.WriteLine("#   [3] KUCHENKA                     #");
                 Console.WriteLine("#                                    #");
                 Console.WriteLine("#   [4] KORYTARZ                     #");
                 Console.WriteLine("#   [5] SALON                        #");
@@ -376,11 +247,15 @@ namespace Gra
                 cki = Console.ReadKey();
                 if (cki.Key == ConsoleKey.D1) zmywarka();
                 if (cki.Key == ConsoleKey.D2) lodowka();
-                if (cki.Key == ConsoleKey.D3) piec();
+                if (cki.Key == ConsoleKey.D3) kuchenka();
+                if (cki.Key == ConsoleKey.Q) Program.wyjscie();
                 if (cki.Key == ConsoleKey.D4) Korytarz.glowny();
                 if (cki.Key == ConsoleKey.D5) Salon.glowny();
 
-            } while (cki.Key != ConsoleKey.Q); Program.wyjscie(); // zmień to , bo potem jak ktoś nie będzie chiał wychodzić i będzie chciał wrócić to go wywali nie wiadomo gdzie - adam
+
+            } while (cki.Key != ConsoleKey.D5 || cki.Key != ConsoleKey.D4);
+            
+            
         }
     }
 }
