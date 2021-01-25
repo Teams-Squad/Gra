@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj": {}
+    "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj": {}
   },
   "projects": {
-    "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj": {
+    "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj",
+        "projectUniqueName": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
         "projectName": "Gra",
-        "projectPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\Gra.csproj",
+        "projectPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
         "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
-        "outputPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Gra\\obj\\",
+        "outputPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\"

@@ -8,9 +8,11 @@ namespace Gra
     {
 		public static void glowny() // poprawa nazwy - adam
 		{
+			ConsoleKeyInfo cki;
+			do
 			{
 				Console.Clear();
-				ConsoleKeyInfo cki;
+				
 
 				Console.WriteLine("######################################");
 				Console.WriteLine("#              KORYTARZ              #");
@@ -31,13 +33,12 @@ namespace Gra
 				Console.WriteLine("######################################");
 
 				cki = Console.ReadKey();
-				if (cki.Key == ConsoleKey.D4)  Salon.glowny();
-				if (cki.Key == ConsoleKey.D5)  Kuchnia.glowny();
-				if (cki.Key == ConsoleKey.D6)  Lazienka.glowny();
-				if (cki.Key == ConsoleKey.D7)  Sypialnia.glowny(); // poprawa nazwy - adam
-				if (cki.Key == ConsoleKey.D8)  Drzwi.drzwi();
+				if (cki.Key == ConsoleKey.D4) Salon.glowny();
+				if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
+				if (cki.Key == ConsoleKey.D6) Lazienka.glowny();
+				if (cki.Key == ConsoleKey.D7) Sypialnia.glowny(); // poprawa nazwy - adam
 
-			}
+			} while (cki.Key != ConsoleKey.D8); Drzwi.glowny(); ;
 
 		}
 	}
