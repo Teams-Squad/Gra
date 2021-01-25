@@ -7,7 +7,6 @@ namespace Gra
 {
     class Program
     {
-        public static int[] kod = new int[3];
         public static int klucz = 0;
         public static void znalezienieKlucza()
         {
@@ -18,15 +17,6 @@ namespace Gra
             if (klucz==0) return 0;
             else return 1;
         }
-
-        /*public static void nowagra()
-        {
-            Random rnd = new Random();
-            //skrytka = rnd.Next(1, 4);
-            for (int i = 0; i <= 2; i++) kod[i] = rnd.Next(1, 10);
-            //test
-        } 
-        */
         public static void loading()
         {
             Console.Clear();
@@ -100,7 +90,7 @@ namespace Gra
                 if (cki.Key == ConsoleKey.D2) zasady();
                 //if (cki.Key == ConsoleKey.T) Test.test1();        // do testów
             } while (cki.Key != ConsoleKey.D1);
-           // loading();
+            loading();
             Salon.glowny();
         }
     }

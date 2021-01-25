@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra25.01\\Gra.csproj",
       "projectName": "Gra",
       "projectPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra25.01\\Gra.csproj",
       "packagesPath": "C:\\Users\\uzytkownik\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra25.01\\obj\\",
+=======
+      "projectUniqueName": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
+      "projectName": "Gra",
+      "projectPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
+      "packagesPath": "C:\\Users\\Adam\\.nuget\\packages\\",
+      "outputPath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\obj\\",
+>>>>>>> e47b38cd24578691ef7bffc04e1363d28f69fb9c
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\uzytkownik\\AppData\\Roaming\\NuGet\\NuGet.Config",

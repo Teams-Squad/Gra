@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "y/E6oyrvnVVeWzy5zhEUBL95W4w5ylGo8CVVDNw6xrc3S39ZXHXtLo/2SxeQpvvpbxyq7VcV+sZXqc3JRHuIHA==",
   "success": true,
   "projectFilePath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra25.01\\Gra.csproj",
+=======
+  "dgSpecHash": "sAH6nnEBVkVUgrRsvn579J6Y+QogHQ1XPna35OKdlHGbb7Y2PSCdYn61uKClqW7zjEPBUZzg3hqwa9fsR4v04w==",
+  "success": true,
+  "projectFilePath": "D:\\+++Studia\\PROGRAMOWANIE\\GRA\\Teams-Squad\\Gra\\Gra.csproj",
+>>>>>>> e47b38cd24578691ef7bffc04e1363d28f69fb9c
   "expectedPackageFiles": [],
   "logs": []
 }

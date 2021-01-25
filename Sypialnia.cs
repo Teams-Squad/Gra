@@ -144,9 +144,8 @@ namespace Gra
                         Console.WriteLine("#    SYPIALNIA: DYWAN: SPÓD DYWANU   #");
                         Console.WriteLine("######################################");
                         Console.WriteLine("#                                    #");
-                        Console.WriteLine("#     PO ZNALEZIONYM PRZEZ CIEBIE    #");
-                        Console.WriteLine("#     MASZ PEWNOŚĆ, ŻE TO BYŁO       #");
-                        Console.WriteLine("#     ŁÓŻKO NALEŻĄCE DO KOBIETY      #");
+                        Console.WriteLine("#       KILKA RYS NA PANELACH,       #");
+                        Console.WriteLine("#       GODNE ZAKRYCIA DYWANEM       #");
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("#   [R] WRÓĆ                         #");
                         Console.WriteLine("#                                    #");
@@ -167,16 +166,16 @@ namespace Gra
                         Console.WriteLine("#      SYPIALNIA: DYWAN: WŁOSIE      #");
                         Console.WriteLine("######################################");
                         Console.WriteLine("#                                    #");
-                        Console.WriteLine("#       ZNALAZŁEŚ ZAPALNICZKĘ:       #");
-                        Console.WriteLine("#    JEST DOSYĆ STARA, ALE WIDAĆ     #");
-                        Console.WriteLine("#       NA NIEJ WIELKĄ CYFRĘ  {0}      #"); // miejsce na kod do sejfu
-                        Console.WriteLine("#     I LOGO FIRMY:    PROJECT 1     #");
+                        Console.WriteLine("#          ZNALAZŁEŚ KLUCZ!:         #");
+                        Console.WriteLine("#         MOŻLIWE, ŻE PASUJE         #");
+                        Console.WriteLine("#        DO DRZWI WYJŚCIOWYCH        #");
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("#   [R] WRÓĆ                         #");
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("#   [Q] WYJŚCIE Z GRY                #");
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("######################################");
+                        Program.znalezienieKlucza();
                         cki = Console.ReadKey();
                         if (cki.Key == ConsoleKey.Q) Program.wyjscie();
                     } while (cki.Key != ConsoleKey.R);
@@ -242,7 +241,7 @@ namespace Gra
                         Console.WriteLine("#     SĄ TU SUKIENKI, PŁASZCZE,      #");
                         Console.WriteLine("#     CO NAJMNIEJ KILKADZIESIĄT      #");
                         Console.WriteLine("#     RODZAJÓW KROJÓW I KOLORÓW,     #");
-                        Console.WriteLine("#     NA DOLE UPORZĄTKOWANE BUTY     #");
+                        Console.WriteLine("#     NA DOLE UPORZĄDKOWANE BUTY     #");
                         Console.WriteLine("#          NA KAŻDĄ OKAZJĘ           #");
                         Console.WriteLine("#                                    #");
                         Console.WriteLine("#   [1] SPRAWDŹ ŚCIANKĘ              #");
