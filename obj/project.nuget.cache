@@ -1,15 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySxTvsxoDMaS2XuWEbOTgx52EcYKJ3Mvh+q+Icluc9G44mKYmNAsk5Ez8mx6j/BVsswybQp/Gy18ZXDQK4d5Qw==",
+  "dgSpecHash": "PgFh4xlzb+ruvjnZ8D2ViL3Th7yN+8T2+aoxSTPgsXRgZ8vwqXAL+qvtYnQ4gRYiCCzrYXi7OQq6zrEd5uU6lg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\uzytkownik\\Source\\Repos\\Gra25.01zladowaniem\\Gra.csproj",
+  "projectFilePath": "C:\\Users\\ksw09\\source\\repos\\Teams-Squad\\Gra\\Gra.csproj",
   "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej C:\\Users\\uzytkownik\\Source\\Repos\\Gra25.01zladowaniem\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

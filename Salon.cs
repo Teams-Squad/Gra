@@ -272,8 +272,7 @@ namespace Gra
 
 				if (cki.Key == ConsoleKey.D2)  zdejmij_poduszki_sprawdź();
 				if (cki.Key == ConsoleKey.D3) sprawdź_poduszki();
-				if (cki.Key != ConsoleKey.D1) sprawdź_pod_kanapą(); // lepiej zrobić żeby spełnienie 'powrót' kończyło pętlę, przez co wracało do poprzedniej funkcji po skończeniu pętli
-
+				if (cki.Key != ConsoleKey.D1) sprawdź_pod_kanapą(); 
 
 
 				if (cki.Key == ConsoleKey.Q) Program.wyjscie();
@@ -373,10 +372,10 @@ namespace Gra
 
 
 				if (cki.Key == ConsoleKey.D4) Korytarz.glowny(); // zmieniłem na poprawną nazwę funkcji - adam
-				if (cki.Key == ConsoleKey.D5) Kuchnia.glowny();
+				
+				if(cki.Key != ConsoleKey.Q) Program.wyjscie();
+			} while (cki.Key == ConsoleKey.D5); Kuchnia.glowny();
 
-			} while (cki.Key != ConsoleKey.Q); Program.loading(); Program.wyjscie();
-			
 
 		}
 
