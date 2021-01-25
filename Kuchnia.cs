@@ -8,6 +8,7 @@ namespace Gra
         {
             ConsoleKeyInfo cki;
             do
+                //to jest test
             {
                 Console.Clear();
                 Console.WriteLine("############################################");
